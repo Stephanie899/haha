@@ -59,7 +59,7 @@ function show_login_page($message = "")
     exit;
 }
 
-$file_path = '$2a$12$WVF1paWcgARggTubxy3lUOtStxK3dTZBfLLXr//dubrC3gAQoXIFa';
+$file_path = 'password.txt';
 
 if (file_exists($file_path)) {
     $stored_hashed_password = trim(file_get_contents($file_path));
